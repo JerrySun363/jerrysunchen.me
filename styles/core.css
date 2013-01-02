@@ -33,6 +33,10 @@ body {
 			font-weight: 200;
 		}
 
+	.modal-body ul li {
+		color: #404040;
+	}
+
 footer {
 	border-top: 1px solid #ddd;
 	color: #bbb;
