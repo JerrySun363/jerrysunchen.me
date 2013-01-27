@@ -1,59 +1,160 @@
-body {
-	background-image: url('../img/background.png');
-	padding: 60px 0 0 0;
+.jumbotron {
+	background: #012d85;
+	background: -moz-linear-gradient(45deg, #012d85 0%, #3482d6 100%);
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#012d85), color-stop(100%,#3482d6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg, #012d85 0%,#3482d6 100%);
+	background: -o-linear-gradient(45deg, #012d85 0%,#3482d6 100%);
+	background: -ms-linear-gradient(45deg, #012d85 0%,#3482d6 100%);
+	background: linear-gradient(45deg, #012d85 0%,#3482d6 100%);
+	-webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+	-moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+	box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+	color: #fff;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#012d85', endColorstr='#3482d6',GradientType=1 );
+	padding: 40px 0;
+	position: relative;
+	text-align: center;
+	text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
 }
 
-.hero-unit {
-	background-color: #fff;
-	border: 1px solid #ddd;
-	margin: 10px 0 30px 0;
-	padding: 45px 60px 85px 60px;
-}
-
-	.hero-unit h1 {
-		font-size: 54px;
-		line-height: 70px;
-		text-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px;
+	.jumbotron:after {
+		background: url(../img/background.png) repeat center center;
+		bottom: 0;
+		content: '';
+		display: block;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
 	}
 
-	.hero-unit p {
+	.jumbotron .container {
+		position: relative;
+		z-index: 2;
+	}
+
+	.jumbotron h1 {
+		font-size: 80px;
+		font-weight: bold;
+		letter-spacing: -1px;
+		line-height: 1;
+	}
+
+	.jumbotron p {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 1.25;
+		margin-bottom: 30px;
+	}
+
+.masthead .btn {
+	border: 0;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+	color: #fff;
+	font-size: 18px;
+	font-weight: 200;
+	padding: 10px 15px;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+
+	.masthead .btn:hover {
+		-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+		-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+		box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+	}
+
+	.masthead .btn:active {
+		-webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
+		-moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
+		box-shadow: inset 0 2px 4px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1);
+	}
+
+hr {
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	border: 0;
+	height: 1px;
+	margin: 70px 0;
+}
+
+.social {
+	background-color: #f5f5f5;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #fff;
+	padding: 15px 0;
+	text-align: center;
+}
+
+	.social-links {
+		list-style: none;
+		margin-left: 0;
+		margin-bottom: 0;
+		padding-left: 0;
+	}
+
+	.social-links li {
+		display: inline-block;
+		line-height: 1;
+		padding: 5px 20px;
+		*display: inline;
+		*zoom: 1;
+	}
+
+	.social-links li a {
+		color: #666;
+		font-size: 20px;
+	}
+
+.love {
+	color: #5a5a5a;
+	text-align: center;
+}
+
+	.love h1 {
+		
+		font-size: 60px;
+		font-weight: 200;
+		letter-spacing: -1px;
+		line-height: 1;
+		margin: 60px 0 10px;
+	}
+
+	.love h2 {
+		font-weight: 200;
+		margin-bottom: 5px;
+	}
+
+	.love .span3, .love .span4, .love .span8 {
+		text-align: left;
+	}
+
+	.love p {
 		font-size: 16px;
-		line-height: 20px;
-		padding: 0 0 5px 0;
+		line-height: 1.5;
 	}
 
-	.hero-unit ul {
-		padding: 0 0 0 20px;
+	.love .love-byline {
+		color: #999;
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 1.25;
+		margin-bottom: 40px;
 	}
 
-		.hero-unit li {
-			color: #404040;
-			font-size: 13px;
-			font-weight: 200;
-		}
-
-	.modal-body ul li {
-		color: #404040;
-	}
-
-.label {
-	background-color: #62cffc;
-	padding: 2px 4px 2px 4px;
+.gist {
+	height: 250px;
+	overflow: scroll;
 }
 
-footer {
-	border-top: 1px solid #ddd;
-	color: #bbb;
-	font-size: 12px;
-	margin: 25px 0 0 0;
-	padding: 18px 0 18px 0;
-	text-align: right;
+.line_numbers	span {
+	line-height: 1.5em !important;
 }
-
-	footer a {
-		color: #62cffc;
-	}
-
-	footer a:hover {
-		color: #62cffc;
-	}
