@@ -159,3 +159,10 @@ hr {
 .line_numbers	span {
 	line-height: 1.5em !important;
 }
+
+footer {
+	background: #f5f5f5;
+	border-top: 1px solid #e5e5e5;
+	color: #777;
+	padding: 30px 0 90px 0;
+}
