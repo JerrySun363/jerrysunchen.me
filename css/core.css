@@ -115,6 +115,11 @@ hr {
 		font-size: 20px;
 	}
 
+	.social-links .icon-github, .social-links .icon-linkedin-sign {
+		color: #666;
+		vertical-align: top;
+	}
+
 .love {
 	color: #5a5a5a;
 	text-align: center;
@@ -149,6 +154,12 @@ hr {
 		font-weight: 300;
 		line-height: 1.25;
 		margin-bottom: 40px;
+	}
+
+	.love .love-icon {
+		display: block;
+		margin: 0 auto 30px;
+		text-align: center;
 	}
 
 .gist {
