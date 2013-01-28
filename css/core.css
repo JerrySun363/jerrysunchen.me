@@ -120,6 +120,10 @@ hr {
 		vertical-align: top;
 	}
 
+.container {
+	max-width: 979px;
+}
+
 .love {
 	color: #5a5a5a;
 	text-align: center;
