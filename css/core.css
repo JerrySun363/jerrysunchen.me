@@ -180,15 +180,26 @@ footer {
 }
 
 @media (max-width: 978px) {
+		.love .span3 {
+		margin: 0;
+		padding: 20px 0;
+		text-align: center;
+		width: 100%;
+	}
+
 	.love .span4, .love .span8 {
 		margin: 0;
 		padding: 20px 0;
 		width: 100%;
 	}
-	.love .span3 {
-		margin: 0;
-		padding: 20px 0;
-		text-align: center;
-		width: 100%;
+}
+
+@media (max-width: 769px) {
+	body {
+		padding: 0;
+	}
+	
+	.container {
+		padding: 0 20px 0 20px;
 	}
 }
