@@ -171,10 +171,6 @@ hr {
 	overflow: scroll;
 }
 
-	.gist .line_numbers span {
-		line-height: 1.5em !important;
-	}
-
 footer {
 	background: #f5f5f5;
 	border-top: 1px solid #e5e5e5;
@@ -183,8 +179,16 @@ footer {
 	padding: 60px 0;
 }
 
-@media (max-width: 767px) {
-	.love .span3, .love .span4, .love .span8 {
+@media (max-width: 978px) {
+	.love .span4, .love .span8 {
+		margin: 0;
 		padding: 20px 0;
+		width: 100%;
+	}
+	.love .span3 {
+		margin: 0;
+		padding: 20px 0;
+		text-align: center;
+		width: 100%;
 	}
 }
