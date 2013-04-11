@@ -143,7 +143,7 @@ hr {
 		margin-bottom: 5px;
 	}
 
-	.love .span3, .love .span4, .love .span8 {
+	.love .span3, .love .span4, .love .span6, .love .span8 {
 		text-align: left;
 	}
 
@@ -187,7 +187,7 @@ footer {
 		width: 100%;
 	}
 
-	.love .span4, .love .span8 {
+	.love .span4, .love .span6, .love .span8 {
 		margin: 0;
 		padding: 20px 0;
 		width: 100%;
