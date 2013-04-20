@@ -2,30 +2,23 @@
 	max-width: 979px;
 }
 
+a {
+	color: #386de5;
+}
+
 hr {
 	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
 	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
 	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
 	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
 	border: 0;
-	height: 1px;
+	height: 2px;
 	margin: 70px 0;
 }
 
 .jumbotron {
-	background: #012d85;
-	background: -moz-linear-gradient(45deg, #012d85 0%, #3482d6 100%);
-	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#012d85), color-stop(100%,#3482d6));
-	background: -webkit-linear-gradient(45deg, #012d85 0%,#3482d6 100%);
-	background: -o-linear-gradient(45deg, #012d85 0%,#3482d6 100%);
-	background: -ms-linear-gradient(45deg, #012d85 0%,#3482d6 100%);
-	background: linear-gradient(45deg, #012d85 0%,#3482d6 100%);
-	border-top: 3px solid #5BA9FC;
-	-webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-	-moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-	box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+	background: #386de5;
 	color: #fff;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#012d85', endColorstr='#3482d6', GradientType=1);
 	padding: 50px 0;
 	position: relative;
 	text-align: center;
@@ -33,7 +26,6 @@ hr {
 }
 
 	.jumbotron:after {
-		background: url(../img/jumbotron-background.png) repeat center center;
 		bottom: 0;
 		content: '';
 		display: block;
@@ -49,7 +41,7 @@ hr {
 	}
 
 	.jumbotron h1 {
-		font-size: 80px;
+		font-size: 70px;
 		font-weight: bold;
 		letter-spacing: -1px;
 		line-height: 1;
@@ -64,16 +56,16 @@ hr {
 
 .masthead .btn {
 	border: 0;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
-	box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.15);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.15);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.15);
 	color: #fff;
 	font-size: 18px;
 	font-weight: 200;
-	padding: 10px 15px;
+	padding: 10px 25px;
 	-webkit-transition: none;
 	-moz-transition: none;
 	transition: none;
@@ -93,8 +85,8 @@ hr {
 
 .social {
 	background-color: #f5f5f5;
-	border-bottom: 1px solid #ddd;
-	border-top: 1px solid #fff;
+	border-bottom: 2px solid #ddd;
+	border-top: 2px solid #2b58bf;
 	padding: 15px 0;
 	text-align: center;
 }
@@ -128,6 +120,14 @@ hr {
 	color: #5a5a5a;
 	text-align: center;
 }
+
+	.love .label-language {
+		background: #d2162c;
+	}
+
+	.love .label-method {
+		background: #fece31;
+	}
 
 	.love h1 {
 		
@@ -173,7 +173,7 @@ hr {
 
 footer {
 	background: #f5f5f5;
-	border-top: 1px solid #e5e5e5;
+	border-top: 2px solid #e5e5e5;
 	color: #777;
 	margin: 100px 0 0 0;
 	padding: 60px 0;
