@@ -18,6 +18,7 @@ hr {
 
 .jumbotron {
 	background: #386de5;
+	border-top: 2px solid #2b58bf;
 	color: #fff;
 	padding: 50px 0;
 	position: relative;
@@ -26,6 +27,7 @@ hr {
 }
 
 	.jumbotron:after {
+		background: url(../img/jumbotron-background.png) repeat center center;
 		bottom: 0;
 		content: '';
 		display: block;
@@ -121,12 +123,8 @@ hr {
 	text-align: center;
 }
 
-	.love .label-language {
-		background: #d2162c;
-	}
-
-	.love .label-method {
-		background: #fece31;
+	.love .label-method .love .label-language {
+		background: #ddd;
 	}
 
 	.love h1 {
