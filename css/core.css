@@ -3,11 +3,11 @@
 }
 
 a {
-	color: #c86d61;
+	color: #76afd0;
 }
 
 	a:hover {
-		color: #c86d61;
+		color: #76afd0;
 	}
 
 hr {
@@ -49,8 +49,8 @@ hr {
 
 .jumbotron {
 	background: url('../img/jumbotron.png') repeat center center;
-	border-bottom: 3px solid #313131;
-	border-top: 3px solid #313131;
+	border-bottom: 6px solid #313131;
+	border-top: 6px solid #313131;
 	color: #fff;
 	padding: 50px 0;
 	position: relative;
