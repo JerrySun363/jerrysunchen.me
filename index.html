@@ -176,11 +176,10 @@
 				<button class="btn btn-primary" data-dismiss="modal" data-toggle="modal" href="#freelancing-modal">Freelancing</button>
 			</div>
 		</div>
-		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		<script src="js/jquery.min.js" type="text/javascript"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript"></script>
 		<script type="text/javascript">
-			var seconds = 0;
+			var _seconds = 0;
 			var _gaq = _gaq || [];
 
 			(function() {
@@ -188,29 +187,30 @@
 				ga.type = "text/javascript";
 				ga.async = true;
 				ga.src = "http://www.google-analytics.com/ga.js";
+
 				var s = document.getElementsByTagName("script")[0];
 				s.parentNode.insertBefore(ga, s);
 			})();
 
 			function trackRead() {
-				seconds += 10;
-				_gaq.push(["_trackEvent", "read", seconds.toString()]);
-				console.log("Read event: " + seconds);
+				_seconds += 10;
+				_gaq.push(["_trackEvent", "read", _seconds.toString()]);
+				window.console && console.log("Read event: " + _seconds);
 			}
 
 			document.getElementById("body").onclick = function(event) {
 				var target = event.target || event.srcElement;
 
 				if (target && (target.nodeName == "A" || target.nodeName == "BUTTON")) {
-					var text = target.innerText.replace(/^\s+|\s+$/g, "");
-					var href = target.href || "null";
+					var text = target.innerText || target.textContent;
+					var href = target.href || "";
 
-					_gaq.push(["_trackEvent", "click", text + " (" + href + ")"]);
-					console.log("Click event: " + text + " (" + href + ")");
+					_gaq.push(["_trackEvent", "click", text.replace(/^\s+|\s+$/g, "") + " (" + href + ")"]);
+					window.console && console.log("Click event: " + text.replace(/^\s+|\s+$/g, "") + " (" + href + ")");
 				}
 			}
 
-			_gaq.push(["_setAccount","UA-20432336-1"]);
+			_gaq.push(["_setAccount", "UA-20432336-1"]);
 			_gaq.push(["_trackPageview"]);
 			setInterval(trackRead, 10000);
 		</script>
