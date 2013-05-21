@@ -150,12 +150,12 @@ hr {
 		height: 20px;
 	}
 
-		.social-links li.twitter {
-			border-bottom: 3px solid #76afd0;
+		.social-links li.dribbble {
+			border-bottom: 3px solid #90a967;
 		}
 		
 		.social-links li.linkedin {
-			border-bottom: 3px solid #90a967;
+			border-bottom: 3px solid #76afd0;
 		}
 
 		.social-links li.gists {
@@ -171,7 +171,7 @@ hr {
 		font-size: 20px;
 	}
 
-	.social-links .icon-github, .social-links .icon-linkedin-sign, .social-links .icon-twitter {
+	.social-links .icon-github, .social-links .icon-linkedin-sign, .social-links .icon-eye-open {
 		color: #666;
 		vertical-align: top;
 	}
@@ -263,7 +263,7 @@ footer {
 		padding: 0 20px 0 20px;
 	}
 
-	.social-links li.twitter, .social-links li.linkedin {
+	.social-links li.dribbble, .social-links li.linkedin {
 		display: none;
 	}
 }
