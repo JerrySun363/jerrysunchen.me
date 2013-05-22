@@ -150,12 +150,16 @@ hr {
 		height: 20px;
 	}
 
+		.social-links li.linkedin {
+			border-bottom: 3px solid #76afd0;
+		}
+
 		.social-links li.dribbble {
 			border-bottom: 3px solid #90a967;
 		}
-		
-		.social-links li.linkedin {
-			border-bottom: 3px solid #76afd0;
+
+		.social-links li.osrc {
+			border-bottom: 3px solid #999;
 		}
 
 		.social-links li.gists {
@@ -247,6 +251,11 @@ footer {
 		padding: 20px 0;
 		width: 100%;
 	}
+
+	.social-links li.dribbble, .social-links li.linkedin {
+		display: none;
+	}
+
 }
 
 @media (max-width: 769px) {
@@ -258,7 +267,7 @@ footer {
 		padding: 0 20px 0 20px;
 	}
 
-	.social-links li.dribbble, .social-links li.linkedin {
+	.social-links li.osrc {
 		display: none;
 	}
 }
