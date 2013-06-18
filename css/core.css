@@ -84,7 +84,7 @@ hr {
 	}
 
 	.jumbotron h1 {
-		font-size: 70px;
+		font-size: 65px;
 		font-weight: bold;
 		letter-spacing: -1px;
 		line-height: 1;
@@ -189,7 +189,6 @@ hr {
 	}
 
 	.love h1 {
-		
 		font-size: 60px;
 		font-weight: 200;
 		letter-spacing: -1px;
@@ -239,6 +238,10 @@ footer {
 }
 
 @media (max-width: 978px) {
+	.jumbotron h1 {
+		font-size: 50px;
+	}
+
 	.love .span3 {
 		margin: 0;
 		padding: 20px 0;
@@ -269,5 +272,21 @@ footer {
 
 	.social-links li.osrc {
 		display: none;
+	}
+}
+
+@media (max-width: 400px) {
+	.masthead .btn {
+		display: block;
+		margin: 10px 0 0 0;
+	}
+
+	.container {
+		padding: 0 10px 0 10px;
+	}
+
+	.masthead .container .pull-right {
+		float: none;
+		text-align: center;
 	}
 }
