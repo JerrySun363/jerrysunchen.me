@@ -51,7 +51,7 @@ hr {
 .btn-success {
 	background: #90a967;
 }
-	
+
 	.btn-success:hover {
 		background: #90a967;
 		text-decoration: underline;
@@ -158,10 +158,6 @@ hr {
 			border-bottom: 3px solid #90a967;
 		}
 
-		.social-links li.osrc {
-			border-bottom: 3px solid #999;
-		}
-
 		.social-links li.gists {
 			border-bottom: 3px solid #d8a443;
 		}
@@ -265,13 +261,9 @@ footer {
 	body {
 		padding: 0;
 	}
-	
+
 	.container {
 		padding: 0 20px 0 20px;
-	}
-
-	.social-links li.osrc {
-		display: none;
 	}
 }
 

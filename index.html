@@ -3,7 +3,7 @@
 	<head>
 		<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
 		<meta content="Passionate about open source, software craftsmanship, and pragmatic development." name="description"/>
-		<meta content="rocky madden, rockymadden, software engineer, fort collins, ft collins, scala, clojure, haskell, python" name="keywords"/>
+		<meta content="rocky madden, rockymadden, software engineer, fort collins, ft collins, scala, clojure" name="keywords"/>
 		<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 		<title>Rocky Madden - Software Engineer in Fort Collins, Colorado</title>
 		<link href="img/rockymadden.ico" rel="shortcut icon" type="image/x-icon"/>
@@ -32,7 +32,6 @@
 				<ul class="social-links">
 					<li class="linkedin"><a href="http://www.linkedin.com/in/rockymadden" title="My work history"><i class="icon-linkedin-sign"></i>  LinkedIn</a></li>
 					<li class="dribbble"><a href="http://dribbble.com/rockymadden" title="My designs"><i class="icon-crop"></i> Dribbble</a></li>
-					<li class="osrc"><a href="http://osrc.dfm.io/rockymadden" title="My open source report card"><i class="icon-code-fork"></i> OSS Report Card</a></li>
 					<li class="gists"><a href="https://gist.github.com/rockymadden" title="My, uh, gists"><i class="icon-github"></i> Gists</a></li>
 					<li class="github"><a href="https://github.com/rockymadden" title="My open source projects"><i class="icon-github"></i> GitHub</a></li>
 				</ul>
@@ -40,12 +39,8 @@
 		</div>
 		<div class="container">
 			<div class="love">
-				<h1>Colorado grown code<span style="color: #be594e;">.</span></h1>
-				<p class="love-byline">My home is <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Fort Collins</span></span>, but I solve problems and work with organizations worldwide.</p>
-				<img id="worldwide" src="img/worldwide.svg"/>
-				<hr/>
 				<h1>I love algorithms<span style="color: #d8a443;">.</span></h1>
-				<p class="love-byline">Natural language processing, optical recognition, and probability distribution are just a few types.</p>
+				<p class="love-byline">Well crafted code is a beautiful thing.</p>
 				<div class="row-fluid">
 					<div class="span4" itemprop="owns" itemscope itemtype="http://schema.org/Product">
 						<h2><span itemprop="name">stringmetric</span> <span class="label label-language">Scala</span> <span class="label label-method">Project</span></h2>
@@ -104,14 +99,9 @@
 					</div>
 				</div>
 				<hr/>
-				<h1>I love other things too<span style="color: #be594e;">.</span></h1>
-				<p class="love-byline">I am a:</p>
-				<div class="row-fluid">
-					<div class="span3"><i class="icon-thumbs-up love-icon icon-4x"></i> Business and startup enthusiast. Models and operations, in particular, are fascinating.</div>
-					<div class="span3"><i class="icon-group love-icon icon-4x"></i> Person who enjoys working with talented and passionate people who take pride in their craft.</div>
-					<div class="span3"><i class="icon-globe love-icon icon-4x"></i> Believer in volunteering and products which have positive impacts on humanity.</div>
-					<div class="span3"><i class="icon-eye-open love-icon icon-4x"></i> Person who values ethics, open disclosure and communication, and honest reflection.</div>
-				</div>
+				<h1>Colorado grown code<span style="color: #be594e;">.</span></h1>
+				<p class="love-byline">My home is <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Fort Collins</span></span>, but I solve problems and work with organizations worldwide.</p>
+				<img id="worldwide" src="img/worldwide.svg"/>
 			</div>
 		</div>
 		<footer class="footer">
@@ -123,7 +113,7 @@
 		<div id="freelancing-modal" class="modal hide fade">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h3>Freelancing:</h3><span class="label">Availability: None</span>
+				<h3>Freelancing:</h3><span class="label">Availability: 2 Weeks</span>
 			</div>
 			<div class="modal-body">
 				<p>Freelancing is performed on a retainer basis. What I offer:</p>
@@ -167,7 +157,6 @@
 					<li><strong>iMessage:</strong> <a href="imessage://imessage@rockymadden.com">imessage@rockymadden.com</a></li>
 					<li><strong>Phone:</strong> <a href="tel:+19705736075"><span itemprop="telephone">+1 970-573-6075</span></a> (Forwarding number, may change)</li>
 					<li><strong>Skype:</strong> <a href="skype:rockymadden?call">rockymadden</a></li>
-					<li><strong>Twitter:</strong> <a href="https://twitter.com/rockymadden">@rockymadden</a></li>
 					<li><strong>XMPP:</strong> <a href="xmpp://xmpp@rockymadden.com">xmpp@rockymadden.com</a></li>
 				</ul>
 			</div>
@@ -183,9 +172,11 @@
 			_gap.push(["_setAccount", "UA-20432336-1"]);
 			_gap.push(["_trackPageview"]);
 			_gap.push(["_gapTrackBounceViaTime", 10]);
+			_gap.push(["_gapTrackBounceViaScroll", 50]);
 			_gap.push(["_gapTrackReads", 20, 30]);
 			_gap.push(["_gapTrackLinkClicks"]);
-			_gapDebug = 1;
+			_gap.push(["_gapTrackMaxScroll", 25]);
+			_gapDebug = true;
 
 			(function() {
 				var gap = document.createElement("script");
